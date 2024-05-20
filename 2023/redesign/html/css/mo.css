@@ -1,0 +1,1161 @@
+@media(max-width: 768px){
+    .all{
+        margin: 0 auto;
+    }
+    html{
+        font-size: 12px;
+    }
+    /* 헤더 */
+    .mobileHeader{
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 60;
+        width: 100%;
+        height: 45px;
+        background-color: #600624;
+    }
+    .mobtop{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .mobtop>h1{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 20px;
+    }
+    .mobtop>a{
+        display: block;
+        width: 45px;
+        height: 100%;
+        margin-top: 13px;
+    }
+    .mobileHeader>.mobmenu{
+        width: 80%;
+        height: 100vh;
+        position: fixed;
+        right: 0;
+        top: 0;
+        z-index: 1000;
+        background-color: #600624;
+        opacity: 0;
+        transform: translateX(100%);
+        transition: all 0.5s linear 0s;
+
+    }
+    .mobileHeader>.mobmenu.on{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    .mobmenu>h1{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        width: 100%;
+    }
+    .mobmenu>h1>img{
+        width: 30%;
+        height: auto;
+        object-fit: contain;
+
+    }
+    .mobmenu>p{
+        height: 15px;
+        width: 95%;
+        margin-top: 25px;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .mobmenu>p img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .mobmenu>ul{
+        margin-top: 30px;
+    }
+    .mobmenu>ul>li{
+        margin-bottom: 10px;
+    }
+    .mobmenu>ul>li a{
+        display: block;
+        height: 100%;
+        color: #fff;
+        font-family: "리디바탕";
+        font-size: 0.8rem;
+        padding-left: 30px;
+    }
+    .mobmenu>ul>li>ul{
+        padding-left: 20px;
+        margin-top: 10px;
+    }
+    .mobmenu>ul>li>ul>li{
+        height: 40px;
+    }
+    .mobmenu>ul>li>ul>li>a{
+        display: block;
+        font-size: 0.8rem;
+        color: #aa8799;
+        line-height: 30px;
+    }
+    .mainHeader{
+        display: none;
+    }
+    .subHeader{
+        display: none;
+    }
+    /* 메인페이지 */
+    .video{
+        position: relative;
+        width: 100%;
+        height: 100vh;
+    }
+    .video>video{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .video::after{
+        content: "";
+        display: block;
+        position: absolute;
+        background-color: #000;
+        opacity: .6;
+        z-index: 40;
+        width: 100%;
+        height: 100%;
+        top: 0; left: 0;
+    }
+    .video>.text{
+        color: white;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        height: 240px;
+        top: 50%;
+        left: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 45;
+        transform: translatex(-50%)translateY(-50%);
+    }
+    .video>.text>h2{
+        font-family: "리디바탕";
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+    .video>.text>p{
+        font-family: "어도비명조";
+        font-size: 1.2rem;
+    }
+    .video>.text>p:nth-of-type(2){
+        width: 30%;
+        margin-top: 20px;
+        border: 1px solid white;
+        border-radius: 15px;
+        width: 60%;
+    }
+    .video>.text>p:nth-of-type(2):hover{
+        background-color: rgba(255,255,255,.5);
+        color:  rgba(255,255,255,1);
+        font-weight: bold;
+    }
+    .video>.text>p>a{
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    .banner{
+        margin-top: 100px;
+        width: 100%;
+        height: 100vh;
+    }
+    .title{
+        text-align: center;
+        line-height: 200%;
+        padding-top: 50px;
+    }
+    .title>h2{
+        font-family: "모던";
+        font-weight: bold;
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+    .title>p{
+        font-family: "리디바탕";
+    }
+    .title>p:nth-of-type(1){
+        font-weight: bold;
+        margin-bottom: 10px;
+        background: url(../img/1x/Asset\ 16.png) no-repeat center bottom;
+        padding-bottom: 20px;
+    }
+    .banner>figure{
+        width: 100%;
+        height: 50vh;
+        overflow: hidden;
+        position: relative;
+    }
+    .banner>figure img{
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+    }
+    .banner>figure>ul{
+        width: 200%;
+        height: 100%;
+        transform: translateX(0%);
+        display: flex;
+    }
+    .banner>figure>ul>li{
+        width: 100%;
+        height: 100%;
+    }
+    .banner>figure>ul>li:nth-of-type(1){
+        background: url(../img/main_mo/banner1.png) no-repeat top center;
+        background-size: cover;
+    }
+    .banner>figure>ul>li:nth-of-type(2){
+        background: url(../img/main_mo/banner2.png) no-repeat top center;
+        background-size: cover;
+    }
+    .banner>figure>div{
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 2rem;
+        width: 100%;
+        height: 100%;
+        line-height: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .banner>figure>div a:nth-of-type(1){
+        left: 0px;
+        transition: all 0.3s ease 0s;
+    }
+    .banner>figure>div a:nth-of-type(2){
+        right: 0px;
+        transition: all 1s ease 0s;
+    }
+    
+    .menuS{
+        margin: 0 auto;
+        width: 100%;
+        position: relative;
+    }
+    .menuS .title{
+        margin-top: 0px;
+    }
+    .menuSC{
+        width: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    
+    .menuS div a{
+        position: absolute;
+        font-size: 2rem;
+        color: #ddd;
+    
+    }
+    .menuS div a:nth-of-type(1){
+        left: 30px;
+        top: 40%;
+        transform: translatex(-30%);
+        transition: all 0.2s ease 0s;
+    }
+    .menuS div a:nth-of-type(2){
+        right: 30px;
+        top: 40%;
+        transition: all 0.2s ease 0s;
+    }
+    .menuS div a:nth-of-type(1):hover{
+        color: #000;
+    }
+    .menuS div a:nth-of-type(2):hover{
+        color: #000;
+    }
+    
+    .menuSC ul{
+        width: 400%;
+        display: flex;
+        transform: translateX(0%);
+    }
+    .menuSC ul>li{
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .menuSC ul>li>.menuText{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        word-break: keep-all;
+    }
+    .menuSC ul>li>.menuImg{
+        width: 55%;
+        word-break: keep-all;
+    }
+    .menuImg{
+        box-sizing: border-box;
+    }
+    .menuImg>h3{
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    .menuImg>h3 img{
+        width: 100%;
+        object-fit: contain;
+    }
+    .menuImg>div{
+        width: 100%;
+    }
+    .menuText{
+        margin-top: 30px;
+    }
+    .menuText>p:first-of-type{
+        font-family: "밀양아리랑고딕";
+        font-weight: bold;
+        margin-bottom: 15px;
+        font-size: 0.5rem;
+        text-align: center;
+    }
+    .menuText>h3{
+        font-family: "리디바탕";
+        font-size: 1.3rem;
+        line-height: 130%;
+        margin-bottom: 20px;
+        position: relative;
+        text-align: center;
+    }
+    .menuText>h3::after{
+        content: "";
+        height: 20%;
+        position: absolute;
+        left: 0;
+        top: 75%;
+        z-index: -1;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .menuSC>ul>li:nth-of-type(1) .menuText>h3::after{
+        background-color: #edd398;
+        width: 230px;
+
+    }
+    .menuSC>ul>li:nth-of-type(2) .menuText>h3::after{
+        background-color: #f4ded4;
+        width: 280px;
+    }
+    .menuSC>ul>li:nth-of-type(3) .menuText>h3::after{
+        background-color: #5b4a40cb;
+        width: 230px;
+    }
+    .menuSC>ul>li:nth-of-type(4) .menuText>h3::after{
+        background-color: #bec871;
+        width: 180px;
+    }
+    .menuText>p:nth-of-type(2){
+        font-family: "one모바일고딕";
+        font-weight: bold;
+        line-height: 130%;
+        margin-bottom: 15px;
+        font-size: 0.8rem;
+        text-align: center;
+    }
+    .menuText>p:nth-of-type(3){
+        font-family: "밀양아리랑고딕";
+        font-size: 0.5rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+        text-align: center;
+        word-break: keep-all;
+    }
+    .menuText>p:last-of-type{
+        width: 120px;
+        text-align: center;
+        line-height: 40px;
+        font-family: "one모바일고딕";
+        font-weight: bold;
+        font-size: 1rem;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+    .menuText>p:last-of-type>a{
+        display: block;
+        width: 100%;
+    }
+    .menuImg>div{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 50px;
+    }
+    .menuImg>div>p:first-of-type{
+        font-family: "다이어리체";
+        color: #fff;
+        font-size: 0.8rem;
+        line-height: 150%;
+    }
+    .menuImg>div>p:last-of-type{
+        font-family: "밀양아리랑고딕";
+        font-weight: bold;
+        line-height: 150%;
+        font-size: 0.8rem;
+    }
+    .menuSC>ul>li:first-of-type .menuText>p:nth-of-type(3){
+        color: #b4a471;
+    }
+    .menuSC>ul>li:nth-of-type(2) .menuText>p:nth-of-type(3){
+        color: #ca8565;
+    }
+    .menuSC>ul>li:nth-of-type(3) .menuText>p:nth-of-type(3){
+        color: #8b5c46;
+    }
+    .menuSC>ul>li:nth-of-type(4) .menuText>p:nth-of-type(3){
+        color: #6f7541;
+    }
+    .menuSC>ul>li:first-of-type .menuText>p:last-of-type{
+     background-color: #edd398;
+    }
+    .menuSC>ul>li:nth-of-type(2) .menuText>p:last-of-type{
+        background-color: #f4ded4;
+       }
+    .menuSC>ul>li:nth-of-type(3) .menuText>p:last-of-type{
+        background-color: #5b4a40cb;
+       }
+    .menuSC>ul>li:nth-of-type(4) .menuText>p:last-of-type{
+        background-color: #bec871;
+       }
+    
+    .menuSC>ul>li:nth-of-type(1) .menuImg{
+        border: 1px solid #edd398;
+    }
+    .menuSC>ul>li:nth-of-type(1) .menuImg>div{
+        background-color: #edd398;
+    }
+    .menuSC>ul>li:nth-of-type(2) .menuImg{
+        border: 1px solid #f4ded4;
+    }
+    .menuSC>ul>li:nth-of-type(2) .menuImg>div{
+        background-color: #f4ded4;
+    }
+    .menuSC>ul>li:nth-of-type(3) .menuImg{
+        border: 1px solid #5b4a40cb;
+    }
+    .menuSC>ul>li:nth-of-type(3) .menuImg>div{
+        background-color: #5b4a40cb;
+    }
+    .menuSC>ul>li:nth-of-type(4) .menuImg{
+        border: 1px solid #bec871;
+    }
+    .menuSC>ul>li:nth-of-type(4) .menuImg>div{
+        background-color: #bec871;
+    }
+    
+    .sub{
+        width: 100%;
+    }
+    .subBox{
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 50px 0;
+    }
+    .subL{
+        width: 45%;
+        height: 200px;
+        border-radius: 2%;
+        box-shadow: 3px 3px 8px gray;
+        position: relative;
+    }
+    .subR{
+        width: 45%;
+        height: 200px;
+        border-radius: 2%;
+        margin-top: 100px;
+        box-shadow: 3px 3px 8px gray;
+        position: relative;
+    }
+    .subBox h4{
+        font-family: "모던";
+        color: #5b1d36;
+        font-weight: bold;
+        margin: 0.4rem;
+    }
+    .subBox h5{
+        font-family: "리디바탕";
+        margin: 0.5rem;
+        font-weight: bold;
+    }
+    .subBox a{
+        margin: 10px;
+        position: absolute;
+        z-index: 10;
+    }
+    .subBox>.subL>p{
+        position: absolute;
+        bottom: -55px;
+        right: -45px;
+        width: 200px;
+    }
+    .subBox>.subL>p img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .subBox>.subR>p{
+        position: absolute;
+        bottom: -50px;
+        right: -47px;
+        width: 200px;
+    }
+    .subBox>.subR>p img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    footer{
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        background-color: #5b1d36;
+        color: #fff;
+        font-family: "밀양아리랑고딕";
+        font-size: 0.917rem;
+        position: relative;
+        word-break: keep-all;
+    }
+    .footlogo{
+        position: absolute;
+        bottom: 10px;
+        left: 20px;
+        width: 50px;
+    }
+    .footlogo>img{
+        width: 100%;
+        object-fit: cover;
+    }
+    .footL{
+        width: 60%;
+        box-sizing: border-box;
+        padding: 30px 20px;
+    }
+    .footR{
+        width: 50%;
+        box-sizing: border-box;
+        background-color: #3f1529;
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+    .footL>ul:first-of-type{
+        line-height: 200%;
+    }
+    .footL>ul:last-of-type{
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .footL>ul:last-of-type>li{
+        width: 25px;
+        height: 25px;
+    }
+    .footL>ul:last-of-type>li img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    .footL>ul>li{
+        font-size: 0.8rem;
+        width: 100%;
+    }
+    .footR{
+        line-height: 200%;
+        padding: 25px 15px;
+    }
+    .footR>p:nth-of-type(2){
+        font-size: 1.083rem;
+        font-family: "one모바일고딕";
+        margin: 10px 0;
+        font-weight: bold;
+    }
+    
+    /* 서브페이지 1 */
+    .sub1Con{
+        display: none;
+    }
+    .mosub1{
+        background-color: #efe4d198;
+        width: 100%;
+        padding-top: 85px;
+        padding-bottom: 30px;
+    }
+    .mosub1>section:nth-of-type(1){
+        padding: 25px;
+        background-color: rgba(255,255,255,.6);
+        border-radius: 20px;
+        width: 75%;
+        margin: 0 auto;
+    }
+    .mosub1>section:nth-of-type(1)>h1{
+        font-family: "리디바탕";
+        font-size: 1.4rem;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .mosub1>section:nth-of-type(1)>p{
+        font-family: "one모바일고딕";
+        text-align: center;
+        font-size: 0.9rem;
+        line-height: 150%;
+    }
+    .mosub1>figure{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .mosub1>figure>img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    .mosub1>section:nth-of-type(2){
+        width: 90%;
+        margin: 0 auto;
+        position: relative;
+        padding-bottom: 20px;
+        overflow: hidden;
+    }
+    .mosub1>section:nth-of-type(2)>ul{
+        width: 300%;
+        display: flex;
+    }
+    .mosub1>section:nth-of-type(2)>ul>li{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .mosub1>section:nth-of-type(2)>ul>li>section{
+        width: 30%;
+        padding-bottom: 10px;
+    }
+    .mosub1>section:nth-of-type(2)>ul>li p{
+        font-family: "리디바탕";
+        font-size: 0.8rem;
+        text-align: center;
+    }
+    .mosub1>section:nth-of-type(2)>ul>li img{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        object-position: center;
+    }
+    .mosub1>section:nth-of-type(2) ul>li>section.sub1on{
+        background: #edd0ab;
+        border-radius: 10px;
+        font-weight: bold;
+    }
+
+    /* 서브페이지2 */
+    .stick{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .sub2icon{
+        width: 85%;
+        overflow: hidden;
+        margin: 0 auto;
+        position: relative;
+    }
+    .stick>.sub2icon>ul{
+        width: calc(900%/4);
+        display: flex;
+        transform: translateX(0%); 
+        padding-bottom: 25px;
+    }
+    .sub2icon>ul>li{
+        width: 100%;
+        margin-right: 16px;
+    }
+    .sub2icon>ul>li>img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+    .stick>.sub2icon>.naviBar{
+        position: absolute;
+        left: 50%;
+        bottom: 0px;
+        transform: translateX(-50%);
+        width: 50%;
+        height: 2px;
+        background-color: #ede1df;
+    }
+    .sta{
+        margin-top: 50px;
+        padding-top: 50px;
+        margin-bottom: 5px;
+    }
+    .sta::after{
+        content: "";
+        display: inline-block;
+        border-top: 1px solid black;
+        width: 30px;
+    }
+    .sub2cont{
+        margin-top: 50px;
+        height: 60%;
+    }
+    .sub2cont>dl{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        justify-content: space-between;
+        margin: 0 auto;
+        align-items: center;
+
+    }
+    .sub2cont>dl>dt{
+        border: 1px solid #95492530;
+        border-radius: 10px;
+        display: none;
+        width: 80%;
+        padding: 15px;
+        height: 20%;
+    }
+    .sub2cont>dl>dt>img{
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+        object-position: center;
+    }
+    .sub2cont>dl>dd{
+        display: none;
+        width: 100%;
+        font-family: "리디바탕";
+        margin-top: 40px;
+        word-break: keep-all;
+    }
+    .sub2cont>dl>dt.sub2on{
+        display: block;
+    }
+    .sub2cont>dl>dd.sub2on{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .sub2cont>dl>dd>h3{
+        font-size: 1.4rem;
+        text-align: center;
+    }
+    .sub2cont>dl>dd>p{
+        margin-top: 30px;
+        line-height: 150%;
+        font-size: 1rem;
+        text-align: center;
+    }
+    .conei{
+        width: 65%;
+    }
+    .conei>ul{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .cone>.conei>ul>li{
+        margin: 0;
+        width: 28%;
+    }
+    .cone{
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 60px;
+    }
+    .sub2cont.coneback>dl{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin: 0 auto;
+        align-items: center;
+        border-radius: 20px;
+    }
+    .sub2cont.coneback>dl>dt{
+        background-color: #fcf8f7;
+        border: none;
+        width: 65%;
+    }
+    .sub2cont.coneback>dl>dt img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    /* 서브페이지 3 */
+    .sub3Banner{
+        padding-top: 40px;
+        width: 100%;
+        position: relative;
+    }
+    .sub3Banner>img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .sub3Banner::after{
+        content: "";
+        display: block;
+        position: absolute;
+        background-color: #000;
+        opacity: .5;
+        z-index: 40;
+        width: 100%;
+        height: 100%;
+        top: 0; left: 0;
+    }
+    .sub3Banner>.sub3text{
+        color: white;
+        position: absolute;
+        top: calc(50%);
+        left: calc(50%);
+        z-index: 50;
+        transform: translate(-50%);
+        text-align: center;
+    }
+    .sub3text>h2{
+        font-family: "모던";
+        font-size: 1.6em;
+        border-bottom: 1px solid #fff;
+        padding-bottom: 9px;
+    }
+    .sub3text>p{
+        font-family: "리디바탕";
+        margin-top: 10px;
+        animation: sub2open2 1s ease 0s;
+        font-size: 0.7rem;
+    }
+    .sub3Cont>.innercont3{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .innercont3>section{
+        width: 100%;
+        margin: 50px 0;
+    }
+    .innercont3>section>h3{
+        font-family: "모던";
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 30px;
+    }
+    .innercont3 section>ul{
+        display: flex;
+        width: 90%;
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+    .innercont3>section>ul>li{
+        margin-right: 15px;
+        padding-bottom: 15px;
+        position: relative;
+        width: 30%;
+    }
+    .innercont3>section>ul>li:nth-of-type(3){
+        margin-right: 0;
+    }
+    .innercont3>section>ul>li>img{
+        width: 100%;
+        height: 60%;
+        object-fit: contain;
+    }
+    .innercont3>section:nth-of-type(1){
+        background: url(../img/sub3/background.png) no-repeat 0 -6%;
+    }
+    .innercont3>section:nth-of-type(2){
+        background: url(../img/sub3/background.png) no-repeat 0 -5%;
+    }
+    .innercont3>section:nth-of-type(4){
+        background: url(../img/sub3/background.png) no-repeat 0 0;
+    }
+    .innercont3 section>ul>li>h4{
+        font-family: "리디바탕";
+        font-size: 1rem;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .innercont3 section>ul>li>p{
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%)translateY(-55%);
+        font-size: 0.8em;
+        color: #fff;
+        z-index: 20;
+        width: 80%;
+        font-family: "나눔스퀘어";
+        line-height: 150%;
+        transition: all 0.3s ease 0s;
+    }
+    /* 서브페이지4 */
+    .sub4banner{
+        padding-top: 45px;
+        width: 100%;    
+    }
+    .sub4banner>section{
+        background-color: #600624;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        padding: 10px 0;
+        margin-top: -3px;
+    }
+    .sub4banner>section>p{
+        color: #fff;
+        opacity: 0.8;
+        font-family: "리디바탕";
+        font-size: 0.3rem;
+        line-height: 150%;
+    }
+    .sub4banner>figure{
+        width: 100%;
+    }
+    .sub4banner>figure>img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .sub4banner>section>h1{
+        position: absolute;
+        top: 45%;
+        transform: translateY(-50%);
+        left: 15px;
+        font-size: 1.2em;
+        font-family: 'Pacifico', cursive;
+        color: #fff;
+    }
+    .sub4tx{
+        width: 100%;
+
+    }
+    .sub4tx>section{
+        margin: 0 auto;
+        width: 100%;
+        margin: 0 auto;
+        padding: 100px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .sub4tx>section>h2{
+        font-family: "리디바탕";
+        font-size: 1.5rem;
+        margin-bottom: 50px;
+    }
+    .sub4tx>section>p{
+        font-family: "one모바일고딕";
+        font-size: 0.8rem;
+        margin-bottom: 20px;
+        word-break: keep-all;
+    }
+    .sub4menu{
+        width: 100%;
+    }
+    .sub4menu>.s4title{
+        font-family: "모던";
+        font-size: 1.8rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    .s4title::after{
+        content: "";
+        width: 40px;
+        border-bottom: 1px solid #000;
+        margin-top: 20px;
+    }
+    .inners4{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .inners4>section{
+        width: 50%;
+    }
+    .sub4img,.sub4menutx{
+        display: flex;
+        flex-direction: column;
+    }
+    .sub4menutx>li,.sub4img>li{
+        width: 100%;
+        height: 25%;
+        margin-bottom: 1px;
+    }
+    .sub4img>li img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .sub4menutx>li{
+        width: 100%;
+        text-align: center;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .sub4menutx>li>h3{
+        font-family: "모던";
+        font-size: 1.4rem;
+    }
+    .sub4menutx>li>p{
+        margin-top: 15px;
+        font-family: "one모바일고딕";
+        font-size: 0.7rem;
+        line-height: 200%;
+        word-break: keep-all;
+        padding: 5px;
+    }
+    .sub4menutx>li:nth-of-type(1){
+        background-color: #87403e;  
+    }
+    .sub4menutx>li:nth-of-type(2){
+        background-color: #bf7666;   
+    }
+    .sub4menutx>li:nth-of-type(3){
+        background-color: #875a41;   
+    }
+    .sub4menutx>li:nth-of-type(4){
+        background-color: #e09c69;   
+    }
+    .sub4list{
+        width: 100%;
+        margin-top: 100px;
+    }
+    .sub4list ul{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .sub4list ul>li{
+        margin-bottom: 40px;
+    }
+    .sub4list ul>li:nth-of-type(1){
+        width: 50%;
+    }
+    .sub4list ul>li:nth-of-type(2){
+        width: 70%;
+        align-self: flex-end;
+    }
+    .sub4list ul>li:nth-of-type(3){
+        width: 50%;
+    }
+    .sub4list ul>li:nth-of-type(4){
+        width: 60%;
+        align-self: flex-end;
+    }
+    .sub4list ul>li img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .sub4list ul>li>section{
+        text-align: center;
+        margin-top: 25px;
+    }
+    .sub4list ul>li>section h4{
+        font-family: "모던";
+        font-size: 1.4rem;
+        padding-bottom: 25px;
+    }
+    .sub4list ul>li>section p{
+        font-family: "리디바탕";
+        font-size: 0.7rem;
+        line-height: 150%;
+        word-break: keep-all;
+    }
+    /* 서브페이지5 */
+    
+    .sub5title{
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 100px;
+    }
+    .sub5title>h2{
+        font-family: "모던";
+        font-size: 3.5rem;
+        margin-bottom: 30px;
+    }
+    .sub5title>p{
+        font-family: "리디바탕";
+        font-size:  1.2rem;
+        line-height: 150%;
+        word-break: keep-all;
+    }
+    .sub5cont{
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+        margin: 0 auto;
+        position: relative;
+        margin-bottom: 50px;
+    }
+    .sub5cont section{
+        width: 100%;
+        margin: 100px 0;
+    }
+    .sub5cont section img{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    .sub5cont>section>img{
+        margin-bottom: 30px;
+    }
+    .sub5cont>section>div h3{
+        font-family: "모던","리디바탕";
+        font-size: 1.4em;
+        margin-bottom: 30px;
+        text-align: center;
+        line-height: 130%;
+    }
+    .sub5cont>section>div p,.sub5cont>section>div ul{
+        font-family: "나눔스퀘어";
+        font-size: 0.8rem;
+        line-height: 150%;
+        text-align: center;
+    }
+    .sub5cont>section>div ul{
+        margin-top: 20px;
+    }
+    .sub5cont>section>div ul>li{
+        margin-top: 10px;
+    }
+}

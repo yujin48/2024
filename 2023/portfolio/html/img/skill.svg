@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1920 1080" style="enable-background:new 0 0 1920 1080;" xml:space="preserve">
+<style type="text/css">
+	.st0{opacity:0.86;fill:#1C5A88;}
+	.st1{fill:#FFFFFF;}
+	.st2{font-family:'LeferiPoint-Black';}
+	.st3{font-size:34.2355px;}
+	.st4{opacity:0.55;}
+	.st5{fill:none;stroke:#FFFFFF;stroke-miterlimit:10;}
+	.st6{opacity:0.55;fill:none;stroke:#FFFFFF;stroke-miterlimit:10;}
+	.st7{opacity:0.86;fill:#009EFF;}
+</style>
+<g>
+	<polygon class="st0" points="522.4,185.1 196.8,421.7 321.2,804.5 723.7,804.5 848.1,421.7 	"/>
+	<polygon class="st0" points="522.5,212.7 250.8,438.9 394.5,703.7 660.5,716.7 774.5,446.7 	"/>
+	<g>
+		<text transform="matrix(1 0 0 1 479.738 163.8547)" class="st1 st2 st3">95%</text>
+	</g>
+	<g>
+		<text transform="matrix(1 0 0 1 853.4266 428.6321)" class="st1 st2 st3">85%</text>
+	</g>
+	<g>
+		<text transform="matrix(1 0 0 1 746.8983 801.8518)" class="st1 st2 st3">75%</text>
+	</g>
+	<text transform="matrix(1 0 0 1 217.9535 801.5803)" class="st1 st2 st3">73%</text>
+	<g>
+		<text transform="matrix(1 0 0 1 97.4579 432.3381)" class="st1 st2 st3">90%</text>
+	</g>
+	<g class="st4">
+		<line class="st5" x1="524" y1="528.2" x2="524" y2="185.2"/>
+	</g>
+	<line class="st6" x1="524" y1="528.2" x2="848" y2="422.2"/>
+	<line class="st6" x1="524" y1="528.2" x2="724" y2="804.2"/>
+	<line class="st6" x1="524" y1="528.2" x2="321" y2="804.2"/>
+	<line class="st6" x1="524" y1="528.2" x2="197" y2="422.2"/>
+	<circle class="st7" cx="524.5" cy="214.7" r="5"/>
+	<circle class="st7" cx="772.5" cy="447.7" r="5"/>
+	<circle class="st7" cx="524.5" cy="527.7" r="6"/>
+	<circle class="st7" cx="660.5" cy="716.7" r="5"/>
+	<circle class="st7" cx="394.5" cy="703.7" r="5"/>
+	<circle class="st7" cx="250.5" cy="439.7" r="5"/>
+	<line class="st5" x1="579" y1="151.7" x2="1142.8" y2="151.7"/>
+	<polyline class="st5" points="949.1,418.2 979.7,418.2 979.7,632.7 1142.8,632.7 	"/>
+	<line class="st5" x1="840.7" y1="790.7" x2="1142.8" y2="790.7"/>
+	<polyline class="st5" points="244.1,819.7 244.1,945.3 1082.3,945.3 1082.3,476.7 1142.8,476.7 	"/>
+	<polyline class="st5" points="136.4,457.7 136.4,906.2 1046,906.2 1046,301.7 1151.2,301.7 	"/>
+</g>
+</svg>

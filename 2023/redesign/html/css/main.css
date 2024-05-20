@@ -1,0 +1,228 @@
+.all{
+    margin: 0 auto;
+    width: 1920px;
+}
+/*
+    header
+*/
+.mainHeader{
+    position: absolute;
+    left: calc(50% - 1500px/2);
+    z-index: 50;
+}
+.mainHeader>figure{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+/* nav */
+.mainHeader>nav>ul{
+    width: 1500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    color: #fff;
+}
+.mainHeader>nav>ul>li{
+    width: calc(1500px/4);
+    text-align: center;
+    font-family: "리디바탕";
+    font-size: 20px;
+    height: 25px;
+    
+    /* color: white; */
+}
+.mainHeader>nav>ul>li>a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 25px;
+}
+.mainHeader>nav>ul>li>ul{
+    background-color: #fff;
+    position: absolute;
+    color: #000;
+    width: calc(1500px/4);
+    height: 0px;
+    overflow: hidden;
+    top: 100%;
+    transition: all 0.5s ease 0s;
+}
+.mainHeader>nav>ul>li>ul>li{
+    height: calc(150px/4);
+    line-height: calc(150px/4);
+    box-sizing: border-box;
+    font-size: 0.7em;
+    transition: all 0.5s ease 0s;
+}
+.mainHeader>nav>ul>li>ul>li>a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.mainHeader>nav>ul:hover li ul{
+    height: 150px;
+}
+.mainHeader>nav>ul>li>ul>li:hover{
+    background-color: #5b1d36;
+    color: white;
+}
+
+
+/*
+    contents
+*/
+/* part 1 */
+.video{
+    position: relative;
+}
+.video::after{
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: #000;
+    opacity: .6;
+    z-index: 40;
+    width: 100%;
+    height: 100%;
+    top: 0; left: 0;
+}
+.video>.text{
+    color: white;
+    position: absolute;
+    text-align: center;
+    width: 800px;
+    height: 240px;
+    top: calc(50% - 120px);
+    left: calc(50% - 400px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 45;
+}
+.video>.text>h2{
+    font-family: "리디바탕";
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+.video>.text>p{
+    font-family: "어도비명조";
+    font-size: 1.2em;
+}
+.video>.text>p:nth-of-type(2){
+    width: 50%;
+    margin-top: 20px;
+    border: 1px solid white;
+    border-radius: 15px;
+}
+.video>.text>p>a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* part 2 (banner) */
+.banner{
+    margin-top: 100px;
+}
+.title{
+    text-align: center;
+    line-height: 200%;
+    margin-bottom: 50px;
+}
+.title>h2{
+    font-family: "모던";
+    font-weight: bold;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+.title>p{
+    font-family: "리디바탕";
+}
+.title>p:nth-of-type(1){
+    font-weight: bold;
+    margin-bottom: 10px;
+    background: url(../img/1x/Asset\ 16.png) no-repeat center bottom;
+    padding-bottom: 20px;
+}
+.banner{
+    height: 1080px;
+}
+.banner>figure{
+    width: 100vw;
+    height: 424px;
+    overflow: hidden;
+}
+.banner>figure>ul{
+    width: 200%;
+    height: 100%;
+    transform: translateX(0%);
+    display: flex;
+}
+.banner>figure>ul>li{
+    width: 50%;
+    height: 100%;
+}
+
+/* part 3 (menu) */
+.menuS{
+    width: 1000px;
+    height: 920px;
+    margin: 0 auto;
+    overflow: hidden;
+    border: 1px solid red;
+}
+.menuS .title{
+    margin-top: 80px;
+}
+.menuS ul{
+    display: flex;
+    width: 400%;
+    height: 500px;
+    transform: translatex(0%);
+    box-sizing: border-box;
+}
+.menuS ul>li{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+.menuS ul>li .menuText{
+    /* border: 1px solid red;    */
+    width: 50%;
+    height: 100%;
+    /* box-sizing: border-box; */
+}
+.menuS ul>li .menuImg{
+    /* border: 1px solid blue; */
+    width: 50%;
+    height: 100%;
+}
+.menuImg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.menuImg>h3{
+    border: 1px solid #edd398;
+    flex: 3;
+}
+.menuImg>h3>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.menuImg>div{
+    background-color: #edd398;
+    text-align: center;
+    flex: 2;
+}
+.menuImg>div>p:first-of-type{
+    color: white;
+    font-family: "다이어리체";
+}

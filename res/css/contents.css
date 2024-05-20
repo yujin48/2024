@@ -1,0 +1,115 @@
+@charset "utf-8";
+/* ##############################################################
+	대분류
+############################################################## */
+/* 중분류 */
+
+
+/* 소분류 */
+
+
+
+
+/* ##############################################################
+	intro, about
+############################################################## */
+.page#home { position: relative; height: 300vh; }
+
+/* box */
+.box-area { position: relative; width: 100%; min-width: 1500px; min-height: calc(100vh - 60px); }
+.box-area .box-wrap { display: flex; justify-content: center; align-items: center; position: absolute; left: 0; margin: 0 auto; width: 100%; height: 100vh; min-width: 1500px; }
+.intro-box { position: relative; padding: 30px; width: 570px; height: 570px; border: 1px solid #fff; box-sizing: border-box; }
+.intro-box::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 1px solid #fff; opacity: 0; transition: opacity 0.4s ease-in-out 0s, transform 0.5s ease-in-out 0.5s; }
+.intro-box .name { margin-right: -30px; text-align: right; transform: translateY(-150%); font-weight: lighter; color: #000; transition: opacity 0.3s ease-in-out 0s; }
+.intro-box .skill-area { display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 20px; margin-top: -64px; width: 100%; height: 100%; opacity: 0; transition: opacity 0.5s ease-in-out 0s; }
+.intro-box .skill-area.on { opacity: 1; }
+.intro-box .skill-area .img-wrap { width: 150px; }
+.intro-box .skill-area .img-wrap img { width: 100%; }
+.box-wrap.end { top: 200vh; }
+.box-txt-area.end { top: 200vh; }
+
+/* box-ani */
+.box-wrap.ani01 .intro-box::before { opacity: 0.5; transform: rotate(6deg); }
+.box-wrap.ani01 .intro-box .name { opacity: 1; }
+.box-wrap.ani02 .intro-box::before { opacity: 0; }
+.box-wrap.ani02 .intro-box .name { opacity: 0; }
+.box-wrap.ani02 .intro-box .skill-area.on .img-wrap { animation: skillOpen; animation-duration: 400ms; animation-fill-mode: forwards; }
+
+/* box-text */
+.box-txt-area { position: absolute; top: 0; left: 0; width: 100%; }
+.box-txt-area .box-txt { position: relative; margin: 0 auto; width: 1500px; height: 100vh; }
+.box-txt-area .intro-txt { font-size: 90px; font-weight: 100; opacity: 0; transition: opacity 0.8s ease-in-out 0.3s; }
+.box-txt-area .intro-txt .lt-txt { position: absolute; top: calc(50% - 200px); left: calc(50% - 392px); }
+.box-txt-area .intro-txt .rt-txt { position: absolute; top: calc(50% - 45px); left: calc(50% - 13px); }
+.box-txt-area .intro-txt .scroll-txt { position: absolute; bottom: 80px; left: 50%; transform: translateX(-50%); font-weight: lighter; color: #000; font-size: 40px; transition: all 0.3s ease-in-out 0s; }
+.box-txt-area .intro-txt .scroll-txt::before { content: 'Scroll Down'; position: absolute; top: -10px; opacity: 0.3; }
+.box-txt-area .cont-txt { opacity: 0; transition: opacity 0.8s ease-in-out 0.3s; }
+.box-txt-area .cont-txt .about-txt { position: absolute; top: 187px; left: 0; }
+.box-txt-area .cont-txt .skill-txt { position: absolute; top: 625px; right: 0; text-align: right; }
+.box-txt-area .cont-txt .txt { font-size: 20px; font-weight: 200; }
+
+/* text-ani */
+.box-txt-area.fixed { position: fixed; top: 60px; }
+.box-wrap.fixed { position: fixed; }
+.box-txt-area .box-txt-wrap { transition: all 1s ease-in-out 0.3s; }
+/* text 01 */
+.box-txt-area .box-txt-wrap.txt01-mv { transform: translateY(0); }
+.box-txt-area .box-txt-wrap.txt01-mv .intro-txt { opacity: 1; }
+/* text 02 */
+.box-txt-area .box-txt-wrap.txt02-mv { transform: translateY(-100vh); }
+.box-txt-area .box-txt-wrap.txt02-mv .cont-txt { opacity: 1; }
+
+
+
+
+@keyframes skillOpen {
+	0% {
+		opacity: 0;
+		transform: scale(0.5);
+	}
+	50%{
+		opacity: 1;
+		transform: scale(1.2);
+	}
+	100%{
+		transform: scale(1);
+	}
+}
+
+@keyframes skillClose {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+
+/* ##############################################################
+	project
+############################################################## */
+.page#project .title-wrap { padding-top: 127px; margin-bottom: 100px; }
+.swiper.sw-project { margin-left: 0; width: 1432px; height: 594px; }
+.pro-area { display: flex; }
+.pro-area .pro-img { width: 55%; }
+.pro-area .pro-img img { width: 100%; }
+.pro-area .pro-info { margin-top: 73px; margin-left: 100px; }
+.pro-area .pro-info .title { font-size: 45px; font-weight: 200; }
+.pro-area .pro-info .title .point { font-weight: bold; }
+.pro-area .pro-info .title .sub-txt { font-size: 20px; }
+.pro-area .pro-info .info-txt { margin-top: 37px; font-size: 20px; font-weight: 300; color: #000; }
+.swiper.sw-project .swiper-pagination { top: 0; text-align: right; z-index: 0; }
+.swiper.sw-project .swiper-pagination .swiper-pagination-bullet { background-color: #fff; opacity: 0.5; transition: all 0.2s ease-in-out 0s; }
+.swiper.sw-project .swiper-pagination .swiper-pagination-bullet-active { width: 15px; border-radius: 20px; background-color: #fff; opacity: 1; }
+
+
+
+/* ##############################################################
+	contact
+############################################################## */
+.contact-wrap { display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%; height: 100vh; }
+.contact-wrap .contact-txt { text-align: center; }
+.contact-wrap .contact-txt .title { line-height: 1; border-bottom: 1px solid #fff; }
+.contact-wrap .contact-txt .txt-s { font-size: 20px; }
+.contact-wrap .copyright-txt { position: absolute; bottom: 50px; text-align: center; font-size: 20px; }

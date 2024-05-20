@@ -1,0 +1,1295 @@
+@media(min-width:769px){
+    .all{
+        margin: 0 auto;
+    }
+
+    /*
+        header
+    */
+    .mobileHeader{
+        display: none;
+    }
+    .mainHeader{
+        position: absolute;
+        left: calc(50% - 1500px/2);
+        z-index: 50;
+    }
+    .mainHeader>figure{
+        display: flex;
+        justify-content: center;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    /* nav */
+    .mainHeader>nav>ul{
+        width: 1500px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        color: #fff;
+    }
+    .mainHeader>nav>ul>li{
+        width: calc(1500px/4);
+        text-align: center;
+        font-family: "리디바탕";
+        font-size: 20px;
+        height: 25px;
+    }
+    .mainHeader>nav>ul>li>a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        line-height: 25px;
+    }
+    .mainHeader>nav>ul>li>ul{
+        background-color: #fff;
+        position: absolute;
+        color: #000;
+        width: calc(1500px/4);
+        height: 0px;
+        overflow: hidden;
+        top: 100%;
+        transition: all 0.5s ease 0s;
+    }
+    .mainHeader>nav>ul>li>ul>li{
+        height: calc(150px/4);
+        line-height: calc(150px/4);
+        box-sizing: border-box;
+        font-size: 0.7em;
+        transition: all 0.5s ease 0s;
+    }
+    .mainHeader>nav>ul>li>ul>li>a{
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    .mainHeader>nav>ul:hover li ul{
+        height: 150px;
+    }
+    .mainHeader>nav>ul>li>ul>li:hover{
+        background-color: #5b1d36;
+        color: white;
+    }
+
+    /* sub header */
+    .subHeader{
+        height: 114px;
+        padding-bottom: 15px;
+        margin: 0 auto;
+    }
+    .subHeader>figure{
+        display: flex;
+        justify-content: center;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    .subHeader>nav>ul{
+        width: 1500px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+    .subHeader>nav>ul>li{
+        width: calc(1500px/4);
+        text-align: center;
+        font-family: "리디바탕";
+        font-size: 20px;
+        height: 40px;
+    }
+    .subHeader>nav>ul>li.headon{
+        border-bottom: 1px solid #5b1d36;
+    }
+    .subHeader>nav>ul>li>a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        line-height: 25px;
+    }
+    .subHeader>nav>ul>li>ul{
+        background-color: #fff;
+        position: absolute;
+        width: calc(1500px/4);
+        height: 0px;
+        overflow: hidden;
+        top: 100%;
+        transition: all 0.5s ease 0s;
+        z-index: 100;
+    }
+    .subHeader>nav>ul>li>ul>li{
+        height: calc(150px/4);
+        line-height: calc(150px/4);
+        box-sizing: border-box;
+        font-size: 0.7em;
+        transition: all 0.5s ease 0s;
+    }
+    .subHeader>nav>ul>li>ul>li>a{
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    .subHeader>nav>ul:hover li ul{
+        height: 150px;
+    }
+    .subHeader>nav>ul>li>ul>li:hover{
+        background-color: #5b1d36;
+        color: white;
+    }
+
+    /*
+        main
+    */
+    /* part 1 */
+    .video{
+        position: relative;
+        width: 100%;
+        height: 100vh;
+    }
+    .video>video{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .video::after{
+        content: "";
+        display: block;
+        position: absolute;
+        background-color: #000;
+        opacity: .6;
+        z-index: 40;
+        width: 100%;
+        height: 100%;
+        top: 0; left: 0;
+    }
+    .video>.text{
+        color: white;
+        position: absolute;
+        text-align: center;
+        width: 800px;
+        height: 240px;
+        top: calc(50% - 120px);
+        left: calc(50% - 400px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 45;
+    }
+    .video>.text>h2{
+        font-family: "리디바탕";
+        font-size: 3em;
+        margin-bottom: 20px;
+    }
+    .video>.text>p{
+        font-family: "어도비명조";
+        font-size: 1.2em;
+    }
+    .video>.text>p:nth-of-type(2){
+        width: 50%;
+        margin-top: 20px;
+        border: 1px solid white;
+        border-radius: 15px;
+    }
+    .video>.text>p:nth-of-type(2):hover{
+        background-color: rgba(255,255,255,.5);
+        color:  rgba(255,255,255,1);
+        font-weight: bold;
+    }
+    .video>.text>p>a{
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    /* part 2 (banner) */
+    .banner{
+        margin: 100px auto 0;
+        max-width: 1920px;
+    }
+    .title{
+        margin-top: 30px;
+        text-align: center;
+        line-height: 200%;
+        margin-bottom: 50px;
+    }
+    .title>h2{
+        font-family: "모던";
+        font-weight: bold;
+        font-size: 1.8em;
+        margin-bottom: 15px;
+    }
+    .title>p{
+        font-family: "리디바탕";
+    }
+    .title>p:nth-of-type(1){
+        font-weight: bold;
+        margin-bottom: 10px;
+        background: url(../img/1x/Asset\ 16.png) no-repeat center bottom;
+        padding-bottom: 20px;
+    }
+    .banner{
+        height: 100vh;
+        width: 100%;
+        min-width: 1500px;
+    }
+    .banner>figure{
+        width: 100%;
+        height: 400px;
+        overflow: hidden;
+        position: relative;
+    }
+    .banner>figure img{
+        width: 100%;
+        height: 100%;
+    }
+    .banner>figure>ul{
+        width: 200%;
+        height: 100%;
+        transform: translateX(0%);
+        display: flex;
+        transition: all 0.5s ease 0s
+    }
+    .banner>figure>ul>li{
+        width: 50%;
+        height: 400px;
+    }
+    .banner>figure>div a{
+        position: absolute;
+        top: 50%;
+        font-size: 70px;
+        transform: translateY(-50%);
+        opacity: .1;
+        width: 10%;
+        height: 100%;
+        line-height: 400px;
+        text-align: center;
+    }
+    .banner>figure>div a:nth-of-type(1){
+        left: 0;
+        transition: all 0.3s ease 0s;
+    }
+    .banner>figure>div a:nth-of-type(1):hover{
+        color: white;
+        background: linear-gradient(90deg, rgba(0,0,0,1),rgba(255,255,255,0));
+        opacity: 1;
+    }
+    .banner>figure>div a:nth-of-type(2){
+        right: 0;
+        transition: all 1s ease 0s;
+    }
+    .banner>figure>div a:nth-of-type(2):hover{
+        color: white;
+        background: linear-gradient(90deg,rgba(255,255,255,0),rgba(0,0,0,1));
+        opacity: 1;
+    }
+
+
+    /* part 3 (menu slider) */
+    .menuS{
+        height: 100vh;
+        margin: 0 auto;
+        width: 1500px;
+        position: relative;
+    }
+    .menuS .title{
+        margin-top: 80px;
+    }
+    .menuSC{
+        width: 1200px;
+        height: 60%;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    .menuS div a{
+        position: absolute;
+        font-size: 60px;
+        color: #ddd;
+    }
+    .menuS div a:nth-of-type(1){
+        left: 770px;
+        top: 40%;
+        transform: translatex(-30%);
+        transition: all 0.2s ease 0s;
+    }
+    .menuS div a:nth-of-type(2){
+        right: 93px;
+        top: 40%;
+        transition: all 0.2s ease 0s;
+    }
+    .menuS div a:nth-of-type(1):hover{
+        color: #000;
+    }
+    .menuS div a:nth-of-type(2):hover{
+        color: #000;
+    }
+    .menuSC ul{
+        width: 400%;
+        height: 100%;
+        display: flex;
+        transform: translateX(0%);
+        transition: all 0.5s linear 0s;
+    }
+    .menuSC ul>li{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .menuSC ul>li>.menuText{
+        width: 45%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .menuSC ul>li>.menuImg{
+        width: 45%;
+        height: 100%;
+        box-sizing: border-box;
+        opacity: 0;
+        transition: all 0.5s ease 0s;
+    }
+    .menuSC ul>li>.menuImg.on{
+        opacity: 1;
+    }
+    .menuImg>h3{
+        width: 100%;
+        height: 75%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    .menuImg>h3 img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    .menuImg>div{
+        width: 100%;
+        height: 25%;
+    }
+    .menuText>p:first-of-type{
+        font-family: "밀양아리랑고딕";
+        font-weight: bold;
+        margin-bottom: 15px;
+        transform: translateY(50%);
+        opacity: 0;
+        transition: all 0.4s ease 0.8s;
+    }
+    .menuText>h3{
+        font-family: "리디바탕";
+        font-size: 2rem;
+        line-height: 130%;
+        margin-bottom: 30px;
+        position: relative;
+        transform: translateY(50%);
+        opacity: 0;
+        transition: all 1s ease 0.9s;
+    }
+    .menuText>h3.on{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    .menuText>h3::after{
+        content: "";
+        height: 20%;
+        position: absolute;
+        width: 0%;
+        left: 0%;
+        top: 75%;
+        z-index: -1;
+        transition: all 1s ease 1.3s
+    }
+    .menuSC>ul>li:nth-of-type(1) .menuText>h3.on::after{
+        background-color: #edd398;
+        width: 81%;
+    }
+    .menuSC>ul>li:nth-of-type(2) .menuText>h3.on::after{
+        background-color: #f4ded4;
+        width: 100%;
+    }
+    .menuSC>ul>li:nth-of-type(3) .menuText>h3.on::after{
+        background-color: #5b4a40cb;
+        opacity: 0.8;
+        width: 85%;
+    }
+    .menuSC>ul>li:nth-of-type(4) .menuText>h3.on::after{
+        background-color: #bec871;
+        width: 65%;
+    }
+    .menuText>p:nth-of-type(2){
+        font-family: "one모바일고딕";
+        font-weight: bold;
+        line-height: 130%;
+        margin-bottom: 20px;
+        transform: translateY(50%);
+        opacity: 0;
+        transition: all 0.7s ease 1.3s;
+    }
+    .menuText>p:nth-of-type(3){
+        font-family: "밀양아리랑고딕";
+        font-size: 0.7rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+        transform: translateY(50%);
+        opacity: 0;
+        transition: all 0.7s ease 1.5s;
+    }
+    .menuText>p:last-of-type{
+        width: 35%;
+        height: 60px;
+        text-align: center;
+        line-height: 60px;
+        font-family: "one모바일고딕";
+        font-weight: bold;
+        transform: translateY(50%);
+        opacity: 0;
+        transition: all 0.7s ease 1.8s;
+    }
+    .menuText>p.on{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    .menuText>p:last-of-type>a{
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    .menuImg>div{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .menuImg>div>p:first-of-type{
+        font-family: "다이어리체";
+        color: #fff;
+        font-size: 1.3rem;
+        line-height: 150%;
+    }
+    .menuImg>div>p:last-of-type{
+        font-family: "밀양아리랑고딕";
+        font-weight: bold;
+        line-height: 150%;
+    }
+    .menuSC>ul>li:first-of-type .menuText>p:nth-of-type(3){
+        color: #b4a471;
+    }
+    .menuSC>ul>li:nth-of-type(2) .menuText>p:nth-of-type(3){
+        color: #ca8565;
+    }
+    .menuSC>ul>li:nth-of-type(3) .menuText>p:nth-of-type(3){
+        color: #8b5c46;
+    }
+    .menuSC>ul>li:nth-of-type(4) .menuText>p:nth-of-type(3){
+        color: #6f7541;
+    }
+    .menuSC>ul>li:first-of-type .menuText>p:last-of-type{
+    background-color: #edd398;
+    }
+    .menuSC>ul>li:nth-of-type(2) .menuText>p:last-of-type{
+        background-color: #f4ded4;
+    }
+    .menuSC>ul>li:nth-of-type(3) .menuText>p:last-of-type{
+        background-color: #5b4a40cb;
+    }
+    .menuSC>ul>li:nth-of-type(4) .menuText>p:last-of-type{
+        background-color: #bec871;
+    }
+    .menuSC>ul>li:nth-of-type(1) .menuImg{
+        border: 1px solid #edd398;
+    }
+    .menuSC>ul>li:nth-of-type(1) .menuImg>div{
+        background-color: #edd398;
+    }
+    .menuSC>ul>li:nth-of-type(2) .menuImg{
+        border: 1px solid #f4ded4;
+    }
+    .menuSC>ul>li:nth-of-type(2) .menuImg>div{
+        background-color: #f4ded4;
+    }
+    .menuSC>ul>li:nth-of-type(3) .menuImg{
+        border: 1px solid #5b4a40cb;
+    }
+    .menuSC>ul>li:nth-of-type(3) .menuImg>div{
+        background-color: #5b4a40cb;
+    }
+    .menuSC>ul>li:nth-of-type(4) .menuImg{
+        border: 1px solid #bec871;
+    }
+    .menuSC>ul>li:nth-of-type(4) .menuImg>div{
+        background-color: #bec871;
+    }
+
+    /* part 4 (sub) */
+    .sub{
+        height: 100vh;
+        width: 100%;
+        margin: 80px 0;
+    }
+    .subBox{
+        width: 650px;
+        height: 600px;
+        margin: 0 auto;
+        padding-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .subL{
+        width: 300px;
+        height: 400px;
+        border-radius: 2%;
+        margin-right: 50px;
+        margin-top: -150px;
+        box-shadow: 3px 3px 8px gray;
+        position: relative;
+    }
+    .subR{
+        width: 300px;
+        height: 400px;
+        border-radius: 2%;
+        margin-top: 100px;
+        box-shadow: 3px 3px 8px gray;
+        position: relative;
+    }
+    .subBox h4{
+        font-family: "모던";
+        color: #5b1d36;
+        font-weight: bold;
+        margin: 20px;
+    }
+    .subBox h5{
+        font-family: "리디바탕";
+        margin: 20px;
+        font-weight: bold;
+    }
+    .subBox a{
+        margin: 20px;
+    }
+    .subBox>.subL>p{
+        position: absolute;
+        bottom: -20%;
+        right: -15%;
+        width: 300px;
+        transition: all 0.3s ease 0s;
+    }
+    .subBox>.subL>p img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .subBox>.subL:hover>p{
+        transform: scale(1.3);
+    }
+    .subBox>.subR>p{
+        position: absolute;
+        bottom: -20%;
+        right: -40%;
+        width: 380px;
+        overflow: hidden;
+
+    }
+    .subBox>.subR>p img{
+        width: 90%;
+        height: 100%;
+        object-fit: cover;
+        transition: all 0.3s ease 0s;
+    }
+    .subBox>.subR:hover>p>img{
+        transform: scale(1.3);
+
+    }
+
+    /* footer */
+    footer{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #5b1d36;
+        color: #fff;
+        font-family: "밀양아리랑고딕";
+        font-size: 11px;
+        height: 20vh;
+    }
+    .footL>ul:first-of-type{
+        line-height: 200%;
+    }
+    .footL>ul:first-of-type>li:nth-of-type(4){
+        float: left;
+        margin-right: 15px;
+    }
+    .footL>ul:first-of-type>li:last-of-type{
+        float: left;
+    }
+    .footL>ul:first-of-type::after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+    .footL>ul:last-of-type{
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .footR{
+        line-height: 200%;
+    }
+    .footR>p:nth-of-type(2){
+        font-size: 25px;
+        font-family: "one모바일고딕";
+        margin: 10px 0;
+        font-weight: bold;
+    }
+
+
+
+    /*
+        sub page 1
+    */
+    .mosub1{display: none;}
+    .sub1Con{
+        background-color: #efe4d198;
+        width: 100%;
+        /* height: calc(100vh - 129px); */
+        padding: 80px 0;
+        min-width: 1700px;
+    }
+    .sub1inner{
+        height: 100%;
+        width: 1500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .sub1CL{
+        height: 80%;
+    }
+    .sub1CL>ul,.sub1CR>ul{
+        display: flex;
+        flex-wrap: wrap;
+        width: calc(150px*3);
+    }
+    .sub1CL>ul{
+        align-items: center;
+        height: 100%;
+    }
+    .sub1CL>ul>li{
+        box-sizing: border-box;
+    }
+    .sub1CL>ul>li,.sub1CR>ul>li{
+        width: 150px;
+        height: 190px;
+        transition: all 0.3s ease 0s;
+    }
+    .sub1CL>ul>li>img,.sub1CR>ul>li>img{
+        width: 100%;
+        height: 75%;
+    }
+    .sub1CL>ul>li>p,.sub1CR>ul>li>p{
+        font-family: "밀양아리랑고딕";
+        font-size: 12px;
+        text-align: center;
+    }
+    .sub1Ccent{
+        width: 700px;
+        height: 80%;
+
+    }
+    .sub1Ccent img{
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    .sub1Ccent img.on{
+        width : 150%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .sub1Ccent img:nth-of-type(1){
+        max-width: 70%;
+        padding-left: 75px;
+    }
+    .sub1CR{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 80%;
+    }
+    .sub1CR div{
+        display: none;
+        padding: 25px;
+        background-color: rgba(255,255,255,.6);
+        border-radius: 20px;
+        height: 180px;
+    }
+    .sub1CR>div.sub1on{
+        display: block;
+    }
+    .sub1CR>div>h1{
+        font-family: "리디바탕";
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    .sub1CR>div>p{
+        font-family: "one모바일고딕";
+        font-weight: bold;
+        line-height: 150%;
+        word-break: keep-all;
+    }
+    .sub1inner ul>li.sub1on{
+        background: #edd0ab;
+        border-radius: 20px;
+        font-weight: bold;
+    }
+    .sub1inner ul li:hover{
+        border: 1px solid #e9c392;
+        box-sizing: border-box;
+        border-radius: 20px;
+    }
+    /* 서브페이지2 */
+    .stick{
+        width: 1500px;
+        margin: 0 auto;
+        margin-bottom: 150px;
+    }
+    .sub2icon>ul:nth-of-type(2){
+        display: none;
+    }
+    .sub2icon>ul{
+        margin: 0 auto;
+        display: flex;
+        width: 500px;
+        flex-wrap: wrap;
+        justify-content: center;
+        opacity: 0;
+        animation: sub2open2 0.7s ease 0s;
+        animation-fill-mode: forwards;
+    }
+    .sub2icon>ul>li{
+        width: 80px;
+        height: 80px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        transition: all 0.2s ease 0s;
+    }
+    .sub2icon>ul>li:hover{
+        transform: scale(108%);
+    }
+    .sub2icon>ul>li>img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+    .sta{
+        padding-top: 20px;  
+    }
+    .sta::after{
+        content: "\00a0\00a0\00a0\00a0\00a0";
+        border-top: 1px solid black;
+        width: 30px;
+    }
+    .sub2cont{
+        margin-top: 50px;
+        opacity: 0;
+        animation: subopen2 0.7s ease 0.1s;
+        animation-fill-mode: forwards;
+    }
+    .sub2cont>dl{
+        display: flex;
+        width: 800px;
+        border: 1px solid #95492530;
+        justify-content: space-between;
+        margin: 0 auto;
+        align-items: center;
+        border-radius: 20px;
+        height: 350px;
+    }
+    .sub2cont>dl>dt{
+        display: none;
+        height: 100%;
+        width: 40%;
+        transition: all 0.5s ease 0s;
+    }
+    .sub2cont>dl>dt>img{
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+        object-position: center;
+    }
+    .sub2cont>dl>dd{
+        display: none;
+        height: 100%;
+        width: 50%;
+        font-family: "리디바탕";
+        margin-right: 15px;
+    }
+    .sub2cont>dl>dt.sub2on{
+        display: block;
+    }
+    .sub2cont>dl>dd.sub2on{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .sub2cont>dl>dd>h3{
+        font-size: 25px;
+    }
+    .sub2cont>dl>dd>p{
+        margin-top: 30px;
+        line-height: 150%;
+    }
+    .cone{
+        width: 1500px;
+        margin: 0 auto;
+        padding-bottom: 100px;
+    }
+    .sub2cont.coneback>dl{
+        display: flex;
+        width: 800px;
+        border: none;
+        background-color: #fcf8f7;
+        justify-content: space-between;
+        margin: 0 auto;
+        align-items: center;
+        border-radius: 20px;
+        height: 350px;
+    }
+    @keyframes subopen2{
+        0%{
+            opacity: 0;
+            transform: translateY(15px);
+        }
+        100%{
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    @keyframes sub2open2{
+        0%{
+            opacity: 0;
+            transform: scaleX(90%);
+        }
+        50%{
+            transform: scaleX(110%);
+        }
+        100%{
+            opacity: 1;
+            transform: scaleX(100%);
+        }
+    }
+    /* 서브페이지 3 */
+    .sub3Banner{
+        width: 100%;
+        position: relative;
+        height: calc(100vh - 129px);
+    }
+    .sub3Banner>img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .sub3Banner::after{
+        content: "";
+        display: block;
+        position: absolute;
+        background-color: #000;
+        opacity: .5;
+        z-index: 40;
+        width: 100%;
+        height: 100%;
+        top: 0; left: 0;
+    }
+    .sub3Banner>.sub3text{
+        color: white;
+        position: absolute;
+        top: calc(50% - 75px);
+        left: calc(50% - 300px);
+        z-index: 50;
+        text-align: center;
+        width: 600px;
+        height: 150px;
+    }
+    .sub3text>h2{
+        font-family: "모던";
+        font-size: 70px;
+        border-bottom: 1px solid #fff;
+        padding-bottom: 15px;
+        animation: subopen2 1s ease 0s;
+    }
+    .sub3text>p{
+        font-family: "리디바탕";
+        margin-top: 30px;
+        animation: sub2open2 1s ease 0s;
+    }
+    .sub3Cont>.innercont3{
+        width: 1500px;
+        margin: 0 auto;
+    }
+    .innercont3>section{
+        width: 100%;
+        height: 500px;
+        display: flex;
+        align-items: center;
+    }
+    .innercont3>section>h3{
+        font-family: "모던";
+        font-size: 1.5em;
+        width: 240px;
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .innercont3 section>ul{
+        display: flex;
+        width: 1200px;
+    }
+    .sub3Cont{
+        background: url(../img/sub3/background.png) no-repeat right top;
+    }
+    .innercont3>section>ul>li{
+        margin-right: 30px;
+        position: relative;
+        width: 235px;
+    }
+    .innercont3 section>ul>li:first-of-type{
+        margin-left: 90px;
+    }
+    .innercont3 section>ul>li>h4{
+        font-family: "리디바탕";
+        font-size: 1.2em;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .innercont3 section>ul>li>p{
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%)translateY(-55%);
+        font-size: 0.8em;
+        color: #fff;
+        z-index: 20;
+        width: 80%;
+        font-family: "나눔스퀘어";
+        line-height: 150%;
+        transition: all 0.3s ease 0s;
+        word-break: keep-all;
+    }
+    .innercont3 section>ul>li::after{
+        content: "";
+        display: block;
+        background-color: #000;
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%; height: 80%;
+        opacity: 0;
+        transition: all 0.3s ease 0s;
+    }
+    .innercont3 section>ul>li>img{
+        width: 100%;
+        height: 80%;
+        object-fit: cover;
+    }
+    .innercont3 section>ul>li:hover>p{
+        display: block;
+    }
+    .innercont3 section>ul>li:hover:after{
+        opacity: 0.5;
+    }
+    .innercont3>section>ul>li:last-of-type{
+        margin-right: 0;
+    }
+    /* 서브페이지4 */
+    .sub4banner{
+        width: 100%;
+        height: calc(100vh - 129px);
+        min-width: 1850px;
+    }
+    .sub4banner>section{
+        background-color: #600624;
+        width: 100%;
+        height: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+    }
+    .sub4banner>section>p{
+        color: #fff;
+        font-family: "리디바탕";
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+    .sub4banner>figure{
+        width: 100%;
+        height: 469px;
+    }
+    .sub4banner>figure>img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .sub4banner>section>h1{
+        position: absolute;
+        top: 40%;
+        transform: translateY(-50%);
+        left: 33%;
+        font-size: 2.5rem;
+        font-family: 'Pacifico', cursive;
+        color: #fff;
+    }
+    .sub4tx{
+        width: 100%;
+        height: 100vh;
+    }
+    .sub4tx>section{
+        margin: 0 auto;
+        width: 100%;
+        height: 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .sub4tx>section>h2{
+        font-family: "리디바탕";
+        font-size: 1.7rem;
+        margin-bottom: 50px;
+    }
+    .sub4tx>section>p{
+        font-family: "one모바일고딕";
+        font-size: 1.1rem;
+        margin-bottom: 20px;
+    }
+    .inners4{
+        display: flex;
+        min-width: 1130px;
+        width: 100%;
+    }
+    .inners4>section{
+        width: 50%;
+        height: 100vh;
+        overflow: hidden;
+
+    }
+    .s4title{
+        display: none;
+    }
+    .sub4img,.sub4menutx{
+        width: 50%;
+        height: 100vh;
+    }
+    .sub4menutx>li,.sub4img>li{
+        width: 100%;
+        height: 100vh;
+    }
+    .sub4img>li img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .sub4menutx>li{
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        color: #fff;
+    }
+    .sub4menutx>li>h3{
+        padding-top: 30%;
+        font-family: "모던";
+        font-size: 3rem;
+    }
+    .sub4menutx>li>p{
+        margin-top: 150px;
+        font-family: "one모바일고딕";
+        font-size: 1.5rem;
+        line-height: 200%;
+    }
+    .sub4menutx>li:nth-of-type(1){
+        background-color: #87403e;
+    }
+    .sub4menutx>li:nth-of-type(2){
+        background-color: #bf7666;   
+    }
+    .sub4menutx>li:nth-of-type(3){
+        background-color: #875a41;   
+    }
+    .sub4menutx>li:nth-of-type(4){
+        background-color: #e09c69;   
+    }
+    .sub4menutx{
+        position: relative;
+    }
+    /* .sub4menutx>li{
+        position: absolute;
+        top: 0;
+        right: 0;
+    } */
+    .sub4list{
+        height: 100vh;
+        margin: 0 auto;
+        width: 100%;
+        min-width: 1800px;
+    }
+    .sub4list .list-wrap {
+        width: 1800px;
+        height: 100%;
+        margin: 0 auto;
+    }
+    .sub4list .list-wrap > ul {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: flex-end;
+    }
+    .sub4list .list-wrap > ul > li{
+        width: 750px;
+        box-sizing: border-box;
+        display: flex;
+    }
+    .sub4list .list-wrap > ul > li:nth-of-type(1),.sub4list .list-wrap > ul > li:nth-of-type(3){
+        flex-direction: row-reverse;
+        margin-right: 10px;
+    }
+    .sub4list .list-wrap > ul > li:nth-of-type(3),.sub4list .list-wrap > ul > li:nth-of-type(4){
+        align-self: flex-start;
+        margin-top: 5px;
+    }
+    .sub4list .list-wrap > ul > li>section>h4{
+        font-family: "모던";
+        font-size: 1.6em;
+        margin-bottom: 10px;
+    }
+    .sub4list .list-wrap > ul > li>section>p{
+        font-family: "리디바탕";
+        line-height: 150%;
+    }
+    .sub4list .list-wrap > ul > li section{
+        margin-left: 15px;
+    }
+    .sub4list .list-wrap > ul > li:nth-of-type(1) section,.sub4list .list-wrap > ul > li:nth-of-type(3) section{
+        margin-right: 15px;
+    }
+    /* 서브페이지5 */
+    
+    .sub5title{
+        /* border: 1px solid red; */
+        width: 1500px;
+        margin: 0 auto;
+        height: 250px;
+        margin-top: 120px;
+        animation: subopen2 1s ease 0s;
+    }
+    .sub5title>h2{
+        font-family: "모던";
+        font-size: 65px;
+        margin-bottom: 30px;
+    }
+    .sub5title>p{
+        font-family: "리디바탕";
+        font-size: 25px;
+        line-height: 150%;
+    }
+    .sub5cont{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+        align-content: space-between;
+        width: 1500px;
+        height: 2100px;
+        margin: 0 auto;
+        position: relative;
+        margin-bottom: 150px;
+    }
+    .sub5cont section{
+        width: 740px;
+    }
+    .sub5cont section img{
+        width: 500px;
+        height: 100%;
+        object-fit: cover;
+        transition: all 1s linear 0s;
+    }
+    .imgf{
+        transition: all 0.5s ease 0s;
+        overflow: hidden;
+        height: 220px;
+    }
+    .sub5cont>section:nth-of-type(1){
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .sub5cont>section:nth-of-type(1) img{
+        margin-bottom: 30px;
+        width: 600px;
+    }
+    .sub5cont>section:nth-of-type(1)>div{
+        margin-top: 140px;
+        width: 600px;
+        opacity: 0;
+        transition: all 0.5s ease 0s;
+    }
+    .sub5cont>section:nth-of-type(2){
+        display: flex;
+        position: absolute;
+        left: 0;
+        top: 40%;
+        align-items: flex-end;
+        width: 100%;
+    }
+    .sub5cont>section:nth-of-type(2) img{
+        margin-right: 50px;
+    }
+    .sub5cont>section:nth-of-type(2) div{
+        opacity: 0;
+        transform: translateX(50px);
+        transition: all 0.5s ease 0s;
+    }
+    .sub5cont>section:nth-of-type(3){
+        width: 100%;
+        height: 450px;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-end;
+    }
+    .sub5cont>section:nth-of-type(3) img{
+        margin-left: 50px;
+    }
+    .sub5cont>section:nth-of-type(3) div{
+        opacity: 0;
+        transform: translateX(-50px);
+        transition: all 0.5s ease 0s;
+    }
+    .sub5cont>section>div h3{
+        font-family: "모던","리디바탕";
+        font-size: 1.5em;
+        margin-bottom: 30px;
+    }
+    .sub5cont>section>div p,.sub5cont>section>div ul{
+        font-family: "나눔스퀘어";
+        font-size: 16px;
+        line-height: 150%;
+    }
+    .sub5cont>section>div ul{
+        margin-top: 20px;
+    }
+    .sub5cont>section>div ul>li{
+        margin-top: 10px;
+    }
+    .sub5cont>section>div.on{
+        opacity: 1;
+        transform: translatex(0);
+        transform: translateY(0);
+    }
+}

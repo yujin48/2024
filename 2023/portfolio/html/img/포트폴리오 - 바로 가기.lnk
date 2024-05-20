@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1920 1080" style="enable-background:new 0 0 1920 1080;" xml:space="preserve">
+<style type="text/css">
+	.st0{opacity:0.86;fill:#1C5A88;}
+	.st1{fill:#FFFFFF;}
+	.st2{font-family:'LeferiPoint-Black';}
+	.st3{font-size:34.2355px;}
+	.st4{opacity:0.67;fill:none;stroke:#FCFCFC;stroke-miterlimit:10;}
+	.st5{fill:none;stroke:#FFFFFF;stroke-miterlimit:10;}
+	.st6{opacity:0.86;fill:#009EFF;}
+</style>
+<polygon class="st0" points="528.1,165.4 202.5,402 326.8,784.8 729.3,784.8 853.7,402 "/>
+<polygon class="st0" points="528.1,193.2 256.5,419.2 378.1,716 661.1,691 745.1,438 "/>
+<g>
+	<text transform="matrix(1 0 0 1 482.6367 144.2139)" class="st1 st2 st3">95%</text>
+</g>
+<g>
+	<text transform="matrix(1 0 0 1 859.8066 408.9912)" class="st1 st2 st3">73%</text>
+</g>
+<g>
+	<text transform="matrix(1 0 0 1 752.5537 789.2109)" class="st1 st2 st3">75%</text>
+</g>
+<text transform="matrix(1 0 0 1 207.3843 770.4395)" class="st1 st2 st3">85%</text>
+<g>
+	<text transform="matrix(1 0 0 1 97.1133 414.6973)" class="st1 st2 st3">90%</text>
+</g>
+<line class="st4" x1="327.2" y1="784.4" x2="531.5" y2="509.4"/>
+<line class="st4" x1="531.5" y1="509.4" x2="528.1" y2="165.8"/>
+<line class="st4" x1="853.3" y1="402.1" x2="531.5" y2="509.4"/>
+<line class="st4" x1="728.9" y1="784.4" x2="531.5" y2="509.4"/>
+<line class="st4" x1="202.8" y1="402.1" x2="531.5" y2="509.4"/>
+<line class="st5" x1="594.6" y1="132.1" x2="1156.8" y2="132.1"/>
+<polyline class="st5" points="904.2,428.1 904.2,623.6 1155.9,623.6 "/>
+<line class="st5" x1="1156.8" y1="775.5" x2="853.7" y2="775.5"/>
+<polyline class="st5" points="1155.9,292.1 1074.9,292.1 1074.9,917.9 143.8,917.9 143.8,440.2 "/>
+<polyline class="st5" points="243.3,809.9 243.3,966.4 992,966.4 992,450.6 1155.9,450.6 "/>
+<circle class="st6" cx="528.1" cy="195" r="5"/>
+<circle class="st6" cx="744.1" cy="438" r="5"/>
+<circle class="st6" cx="532.1" cy="508" r="6"/>
+<circle class="st6" cx="661.1" cy="689" r="5"/>
+<circle class="st6" cx="378.1" cy="716" r="5"/>
+<circle class="st6" cx="256.1" cy="420" r="5"/>
+</svg>

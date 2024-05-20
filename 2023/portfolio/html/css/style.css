@@ -1,0 +1,895 @@
+html{
+    font-family: "notoM";
+    font-size: 15px;
+    overflow-x: hidden;
+}
+
+.all{
+    width: 100%;
+    margin: 0 auto;
+}
+header{
+    font-family: "레페리B";
+    font-size: 16px;
+}
+header>.inH{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    color: #fff;
+    transition: all 0.5s ease 0s;
+    z-index: 500;
+}
+.inH>ul{
+    width: 755px;
+    margin-right: 50px;
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.inH.off{
+    opacity: 0;
+    pointer-events: none;
+}
+.mainH{
+    background-color: #fff;
+    position: fixed;
+    z-index: 50;
+    height: 100vh;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    transform: translateX(-160px);
+    transition: all 0.5s ease 0s;
+}
+.mainH>ul{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.mainH>ul>li{
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    transition: all 0.3s ease 0s;
+}
+.mainH>ul>li:hover{
+    background-color: #000;
+    color: #fff;
+}
+.mainH>span{
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    transform: rotate(45deg);
+    z-index: -1;
+    transition: all 0.5s ease 0s;
+}
+.mainH.onColor{
+    background-color: #000;
+    color: #fff;
+}
+.mainH.onColor>span{
+    background-color: #000;
+}
+.mainH.onColor>ul>li:hover{
+    background-color: #fff;
+    color: #000;
+}
+.mainH.on{
+    transform: translateX(0);
+}
+.mainH.dd:hover{
+    transform: translateX(-150px);
+}
+.mainH.off{
+    transform: translateX(-150%);
+}
+.mainH>ul>li>a{
+    display: block;
+    width: 90%;
+    height: 100%;
+    text-align: center;
+}
+.intro{
+    width: 100%; height: 100vh;
+    position: relative;
+}
+.intro>h1{
+    width: 90%;
+    height: 100%;
+    font-family: "레페리B";
+    font-size: 230px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 150px;
+    line-height: 82%;
+}
+.intro>h1>span:nth-of-type(3){
+    padding-left: 10px;
+    animation: intro 1.5s ease 0s;
+}
+.intro>h1>span:nth-of-type(2){
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+}
+.intro>h1>span:nth-of-type(1){
+    animation: intro 1.5s ease 0s;
+}
+.intro>figure{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -20;
+}
+.intro>figure>video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.intro>figure::before{
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: #000;
+    width: 50%;
+    height: 100%;
+    transition: all 1s ease 0s;
+}
+.intro>figure.ab::before{
+    width: 100%;
+}
+.intro>figure.on::before{
+    width: 75%;
+    left: 0;
+    top: 0;
+    transform: translateX(50%);
+    opacity: 0.3;
+}
+.intro>figure.onn::before{
+    width: 75%;
+    transform: translate(40%);
+    opacity: 1;
+}
+.intro>span{
+    font-family: "나눔스퀘어";
+    font-size: 60px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 53%;
+    transform: translateY(50%);
+    opacity: 0;
+    animation: opacity 1s ease 1.5s;
+    animation-fill-mode: forwards;
+}
+.about{
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    position: relative;
+}
+.about::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    position: absolute;
+    top:55% ; left: 0;
+
+}
+.about::before{
+    content: "";
+    display: block;
+    height: 100%;
+    width: 1px;
+    position: absolute;
+    top: 0;
+    right: 53%;
+    transform: translateX(-10px);
+    border-right: 1px solid rgba(255,255,255,0.3);
+}
+.about>.title{
+    width: 60%;
+    height: 50%;
+    margin: 0 auto;
+    padding-top: 60px;
+    
+}
+.about>.title>span{
+    font-family: "나눔스퀘어";
+    font-size: 60px;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: all 0.5s linear 0.5s;
+}
+.about.on>.title>span{
+    opacity: 1;
+    transform: translateY(0);
+}
+.about>.title>h2{
+    font-family: "레페리B";
+    font-size: 230px;
+    color: #fff;
+    line-height: 82%;
+    letter-spacing: -100px;
+    transition: all 0.5s ease 0s;
+    opacity: 0;
+}
+.about.on>.title>h2{
+    letter-spacing: 0;
+    opacity: 1;
+}
+.about>.title>h2:last-of-type{
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+}
+.about>.title>h2:last-of-type>span{
+    color: #fff;
+}
+.about>.pF{
+    width: 100%;
+    display: flex;
+    font-family: "notoR";
+    font-size: 20px;
+    line-height: 0%;
+    opacity: 0;
+    transition: all 0.5s ease 1s;
+}
+.about.on>.pF{
+    opacity: 1;
+    line-height: 200%;
+}
+.about .pro{
+    width: 500px;
+    height: 300px;
+    margin-left: 363px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.about .license{
+    width: 500px;
+    height: 300px;
+    margin-left: 40px;
+}
+.skill{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    /* border: 1px solid red; */
+}
+
+.redesign{
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+
+}
+.redesign>h2{
+    color: #042c30;
+    font-family: "레페리B";
+    font-size: 200px;
+    line-height: 82%;
+    width: 80%;
+    margin: 0 auto;
+    transform: translateX(50%);
+    opacity: 0;
+    transition: all 1s ease 0s;
+}
+.redesign.on>h2{
+    transform: translateX(0);
+    opacity: 1;
+}
+.redesign>h2 span{
+    color: transparent;
+    -webkit-text-stroke: 1px #042c30;
+}
+.redesign>section{
+    width: 100%;
+    height: 680px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.redesign .txt{
+    height: 100%;
+    width: 50%;
+    padding-left: 210px;
+}
+.redesign .txt>h3{
+    font-family: "나눔스퀘어";
+    font-size: 70px;
+    padding-top: 47px;
+    color: #ff5c5c;
+    margin-bottom: 25px;
+    opacity: 0;
+    transition: all 0.5s ease 0.3s;
+}
+.redesign .txt>h3>span{
+    color: #dad0c0;
+}
+.redesign .txt>p{
+    font-family: "notoB";
+    font-size: 20px;
+}
+.redesign .txt>p:nth-of-type(1){
+    line-height: 10%;
+    opacity: 0;
+    transition: all 0.5s ease 0.5s;
+}
+.redesign .txt>p:nth-of-type(2),.redesign .txt>p:nth-of-type(3){
+    margin: 20px 0;
+    font-family: "레페리R";
+    font-size: 18px;
+    opacity: 0;
+    transition: all 0.5s ease 0.8s
+}
+.redesign.on .txt>h3,.redesign.on .txt>p{
+    opacity: 1;
+}
+.redesign.on .txt>p:nth-of-type(1){
+    line-height: 140%;
+}
+.DPbtn{
+    background-color: #042c30;
+    color: #fff;
+    display: block;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    font-family: "레페리R";
+    font-size: 18px;
+    line-height: 50px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.5s ease 0.7s,background-color 0.5s ease 0s;
+}
+.DPbtn:hover{
+    background-color: #000;
+}
+.redesign.on .DPbtn,.point.on .DPbtn{
+    opacity: 1;
+}
+.redesign figure{
+    height: 100%;
+    width: 50%;
+}
+.redesign figure>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.point{
+    width: 100%;
+    height: 100vh;
+    background-color: #ffcd98;
+}
+.point>h2{
+    color: #042c30;
+    font-family: "레페리B";
+    font-size: 200px;
+    line-height: 82%;
+    width: 100%;
+    text-align: right;
+    transform: translate(-50%);
+    opacity: 0;
+    transition: all 1s ease 0s;
+}
+.point.on>h2{
+    transform: translateX(0);
+    opacity: 1;
+}
+.point section{
+    width: 100%;
+    height: 642px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.point figure{
+    height: 100%;
+    width: 50%;
+    padding-left: 115px;
+}
+.point figure>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.point .txt{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.point .txt>p{
+    width: 75%;
+    margin: 11px auto;
+    font-family: "notoB";
+    font-size: 20px;
+    line-height: 10%;
+    opacity: 0;
+    transition: all 0.5s ease 0s;
+}
+.point.on .txt>p{
+    line-height: 140%;
+    opacity: 1;
+}
+.point .txt>.DPbtn{
+    margin-top: 30px;
+    margin-left: 115px;
+}
+.fix{
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    top: 0;
+    right: 0;
+    transform: translateX(100%);
+    transition: all 0.8s ease 0s;
+}
+.design{
+    width: 100%;
+    position: relative;
+}
+.design>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.design>ul{
+    display: flex;
+    position: absolute;
+    top: 160px;
+    left: 247px;
+}
+
+.design>ul>li{
+    color: #fff;
+    width: 190px;
+    height: 46px;
+    text-align: center;
+    font-family: "레페리R";
+    font-size: 17px;
+    line-height: 46px;
+    margin-right: 21px;
+}
+.design>ul>li:first-of-type{
+    background-color: #ff5c5c;
+}
+.design>ul>li:nth-of-type(2){
+    background-color: #ddc6c2;
+}
+.design>ul>li:last-of-type{
+    background-color: #dad0c0;
+    margin-right: 0;
+}
+.design>span{
+    color: #fff;
+    width: 130px;
+    height: 50px;
+    text-align: center;
+    font-family: "레페리R";
+    font-size: 20px;
+    line-height: 50px;
+    margin-right: 60px;
+    background-color: #ff5c5c;
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+.popup{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+}
+.popup>.station{
+    width: 100%;
+    height: 100%;
+}
+.popup>.title{
+    width: 50%;
+    color: #fff;
+}
+.popup>.title>h2{
+    font-family: "레페리B";
+    font-size: 200px;
+    line-height: 82%;
+    width: 100%;
+    text-align: right;
+    margin-bottom: 30px;
+    opacity: 0;
+    transform: translateY(50%);
+    transition: all 0.5s ease 0s;
+}
+.popup.on>.title>h2,.popup.on>.title>p,.popup.on .pop{
+    opacity: 1;
+    transform: translateY(0);
+}
+.popup>.title>p{
+    font-family: "notoR";
+    font-size: 25px;
+    margin-left: 47%;
+    opacity: 0;
+    transform: translateY(50%);
+    transition: all 0.5s ease 0.3s;
+}
+.popup .pop{
+    opacity: 0;
+    transition: all 0.5s ease 0.7s;
+}
+.popup .train>li{
+    height: 100%;
+    display: flex;
+}
+.popup .train>li>figure{
+    width: 50vw;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.popup .train>li>figure>img{
+    width: 70%;
+    height: 65%;
+    object-fit: cover;
+}
+.popup .train>li>section{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 80px;
+}
+.popup .train>li>section>h3{
+    font-family: "notoB";
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.popup .train>li>section>p{
+    font-family: "notoM";
+    color: #fff;
+    font-size: 18px;
+    line-height: 200%;
+}
+.s1btnN{
+    margin-right: 150px;
+}
+.s1btnP{
+    margin-left: 150px;
+}
+.s1btnN::after,.s1btnP::after{
+    color: #fff;
+    font-size: 70px;
+}
+.p1>section>h3{
+    color: #1f9b62;
+}
+.p2>section>h3{
+    color: #ff2e47;
+}
+.p3>section>h3{
+    color: #fec00b;
+}
+.p4>section>h3{
+    color: #efc896;
+}
+.p5>section>h3{
+    color: #ffc0b9;
+}
+.p6>section>h3{
+    color: #00cfff;
+}
+.p7>section>h3{
+    color: #efc397;
+}
+.p8>section>h3{
+    color: #ff8a8a;
+}
+.p9>section>h3{
+    color: #af79ff;
+}
+.backG{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0; left: 0;
+    z-index: -10;
+}
+.backG>div{
+    width: 100%;
+    height: 100%;
+}
+.back1{
+    background-color: #3c544b;
+}
+.back2{
+    background-color: #931d31;
+}
+.back3{
+    background-color: #5a5b59;
+}
+.back4{
+    background-color: #a3917c;
+}
+.back5{
+    background-color: #bf7f8b;
+}
+.back6{
+    background-color: #5990a5;
+}
+.back7{
+    background-color: #9e8772;
+}
+.back8{
+    background-color: #af7987;
+}
+.back9{
+    background-color: #896a99;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-color: #1f1f33;
+    position: relative;
+}
+.banner .txt{
+    margin-bottom: 60px;
+}
+.banner.on .txt>h2,.banner.on .txt>p,.banners.on{
+    opacity: 1;
+    transform: translateY(0);
+}
+.banner .txt>h2{
+    font-family: "레페리B";
+    font-size: 200px;
+    line-height: 82%;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(50%);
+    transition: all 0.5s ease 0s;
+}
+.banner .txt>p{
+    font-family: "notoR";
+    font-size: 25px;
+    color: #fff;
+    margin-left: 40px;
+    opacity: 0;
+    transform: translateY(50%);
+    transition: all 0.5s ease 0.3s;
+}
+.banners{
+    width: 73%;
+    height: 53%;
+    opacity: 0;
+    transition: all 0.5s ease 0.7s;
+}
+.bnasd{
+    height: 100%;
+}
+.bnasd>li{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.bnasd>li>h3{
+    font-family: "레페리B";
+    font-size: 40px;
+    color: #fff;
+    padding-right: 20px;
+}
+.bnasd>li>figure{
+    width: 100%;
+}
+.bnasd>li>figure>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.bn{
+    margin-right:180px;
+    margin-top: 50px;
+}
+.bp{
+    margin-left: 180px;
+    margin-top: 50px;
+}
+.bn::after,.bp::after{
+    color: #fff;
+    font-size: 70px;
+}
+.bye{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.bye>h1{
+    font-family: "레페리B";
+    font-size: 200px;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 0%;
+    text-align: right;
+    padding-top: 12%;
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+}
+.bye.on>h1{
+    line-height: 83%;
+    opacity: 1;
+}
+.bye>a{
+    display: block;
+    width: 0;
+    text-align: center;
+    background-color: #fff;
+    color: #000;
+    font-family: "나눔스퀘어";
+    font-size: 50px;
+    position: absolute;
+    top: 330px;
+    left: 31%;
+    opacity: 0;
+    overflow: hidden;
+    height: 58px;
+    white-space: nowrap;
+    transition: all 0.5s ease 0.5s;
+}
+.bye.on>a{
+    width: 370px;
+    opacity: 1;
+}
+.bannerP{
+    width: 80%;
+    height: 800px;
+    background-color: #1a2c35;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 50;
+    display: none;
+}
+.bannerP>span{
+    margin-top: 6px;
+    margin-left: 98%;
+    cursor: pointer;
+}
+.bannerPo{
+    width: 100%;
+    height: 95%;
+    background-color: #2c495b;
+}
+.bannerPop>li{
+    background-color: #2c495b;
+}
+.bannerPop>li>h3{
+    font-family: "레페리B";
+    font-size: 60px;
+    color: #fff;
+    padding-right: 20px;
+    padding-left: 40px;
+}
+.bannerPop>li>figure{
+    width: 100%;    
+    height: 475px;
+}
+.bannerPop>li>figure>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.bannerPop>li>section{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    font-family: "notoM";
+    font-size: 20px;
+    color: #fff;
+    margin-top: 50px;
+}
+.bcolor{
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.bcolor>h4{
+    flex: 1;
+}
+.bcolor>ul{
+    flex:2;
+    display: flex;
+    justify-content: space-between;
+}
+.bcolor.c3{
+    width: 30%;
+}
+
+.st0{opacity:0.86;fill:#1C5A88; transition: all 1s ease 2s;}
+.st0.ineer{ opacity: 1; fill: transparent;}
+.st1{fill:#FFFFFF;}
+.st2{font-family:'레페리B';}
+.st3{font-size:34.2355px;}
+.st4{opacity:0.55;}
+.st5{fill:none;stroke:#FFFFFF;stroke-miterlimit:10;}
+.st6{opacity:0.55;fill:none;stroke:#FFFFFF;stroke-miterlimit:10;}
+.st7{opacity:0.86;fill:#009EFF;}
+
+.skill>ul{
+    width: 30%;
+    position: absolute;
+    top: 51%; right: 165px;
+    transform: translateY(-50%);
+}
+.skill>ul>li{
+    width: 400px;
+    height: 104px;
+    display: flex;
+    margin-bottom: 55px;
+    color: #fff;
+}
+.skill>ul>li>figure{
+    width: 30%;
+    height: 100%;
+    z-index: 10;
+}
+.skill>ul>li>figure>img{
+    width: 104px;
+    height: 100%;
+    object-fit: cover;
+}
+.skill>ul>li>section{
+    width: 0;
+    opacity: 0;
+    background-color: #000;
+    font-family: "notoR";
+    font-size: 15px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    transition: all 0.5s ease 0s;
+    pointer-events: none;
+}
+
+.skill>ul>li>section.on{
+    width: 70%;
+    opacity: 1;
+}
+
+.skill>svg .go.on{
+    stroke: #009EFF;
+}
+
